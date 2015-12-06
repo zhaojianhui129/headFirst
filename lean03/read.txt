@@ -1,0 +1,1 @@
+使用php内置两个接口（SplSubject：被观察的对象和SplObserver：观察者的对象）实现观察者模式
