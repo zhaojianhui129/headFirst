@@ -25,11 +25,12 @@ class Waitress{
         $this->printMenuData($dinerIterator);
     }
     private function printMenuData($iterator){
-        while ($iterator->next()){
-            $menuItem = $iterator->next();
+        while ($iterator->valid()){
+            $menuItem = $iterator->current();
             echo $menuItem->getName() . ", ";
             echo $menuItem->getPrice() . " -- ";
             echo $menuItem->getDescription() . "<br>";
+            $iterator->next();
         }
     }
 }
