@@ -1,5 +1,6 @@
 <?php
-//phpinfo();
+phpinfo();
+exit();
 //Establish connection to AMQP
 $connection = new AMQPConnection();
 $connection->setHost('192.168.1.104');
